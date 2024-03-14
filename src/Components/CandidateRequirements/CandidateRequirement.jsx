@@ -1,11 +1,5 @@
-
-
 const CandidateRequirement = () => {
-  return (
-    <div>
-      Candidate
-    </div>
-  )
-}
+  return <div>Candidate</div>;
+};
 
-export default CandidateRequirement
+export default CandidateRequirement;
