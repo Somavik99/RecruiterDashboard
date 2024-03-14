@@ -1,0 +1,35 @@
+.Form__Container {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  padding: 50px;
+  border: 1px solid black;
+}
+
+.Form__Container .Form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 50px;
+  border: 1px solid black;
+}
+
+#CompanyName{
+  width: 550px;
+}
+
+.Company__fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.Recruiter__fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* padding:15px; */
+}
