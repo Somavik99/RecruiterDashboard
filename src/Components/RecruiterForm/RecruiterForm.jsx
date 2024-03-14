@@ -8,8 +8,10 @@ const RecruiterForm = () => {
     <div className="Form__Container">
       <h1 style={{ fontFamily: "Playfair Display, serif" }}>Post Your Job</h1>
       <form className="Form">
-        <div>
-          <div style={{ fontWeight: "800" }}>Basic Details</div>
+        <div style={{ margin: "15px 0" }}>
+          <div style={{ fontWeight: "800", fontSize: "1.5rem" }}>
+            Basic Details
+          </div>
           <span style={{ color: "crimson" }}>*marked fields are important</span>
         </div>
 
@@ -51,33 +53,52 @@ const RecruiterForm = () => {
             <p style={{ fontWeight: "800" }}>
               Location <span style={{ color: "red" }}>*</span>
             </p>
-            <div>
-              <p className="Type__options">
+            <div className="Locations">
+              <p className="Location__option">
                 <HiOutlineOfficeBuilding />
                 <input type="radio" name="" id="" />
-                <p>
+                <div style={{ fontWeight: "800" }}>
                   Work From Office
-                  <div>Candidate have to work at office location</div>
-                </p>
+                  <div style={{ color: "gray" ,fontWeight: "600",fontSize:"13px"}}>Candidate have to work at office location</div>
+                </div>
               </p>
-              <p>
+              <p className="Location__option">
                 <FaHome />
                 <input type="radio" name="" id="" />
-                <p>
+                <div style={{ fontWeight: "800" }}>
                   Work From Home
-                  <div>Candidate have flexibility to work from home</div>
-                </p>
+                  <div style={{ color: "gray",fontWeight: "600",fontSize:"13px" }}>Candidate have flexibility to work from home</div>
+                </div>
               </p>
-              <p>
+              <p className="Location__option">
                 <FaTruckField />
                 <input type="radio" name="" id="" />
-                <p>
-                  Field Job <div>Candidate have to do the field work</div>
-                </p>
+                <div style={{ fontWeight: "800" }}>
+                  Field Job <div style={{ color: "gray",fontWeight: "600",fontSize:"13px" }}>Candidate have to do the field work</div>
+                </div>
               </p>
             </div>
           </section>
+          <section className="Fee__field">
+            <p style={{ fontWeight: "800" }}>
+              Any security deposit require for the candidate?
+              <span style={{ color: "red" }}>*</span>
+            </p>
+            <div>
+              <div>
+                <input type="radio" name="" id="" />
+                Yes
+              </div>
+              <div>
+                <input type="radio" name="" id="" />
+                No
+              </div>
+            </div>
+          </section>
         </div>
+        <p>
+          <button>Continue</button>
+        </p>
       </form>
     </div>
   );
