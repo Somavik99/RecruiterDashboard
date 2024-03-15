@@ -12,7 +12,7 @@ const RecruiterForm = () => {
           <div style={{ fontWeight: "800", fontSize: "1.5rem" }}>
             Basic Details
           </div>
-          <span style={{ color: "crimson" }}>*marked fields are important</span>
+          <span style={{ color: "crimson",fontSize:"13px" }}>*marked fields are important</span>
         </div>
 
         <div>

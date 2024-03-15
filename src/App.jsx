@@ -1,14 +1,15 @@
 
 import './App.css'
-// import FormStepper from './Components/FormStepper/FormStepper'
+import CandidateRequirement from './Components/CandidateRequirements/CandidateRequirement'
+import FormStepper from './Components/FormStepper/FormStepper'
 import RecruiterForm from './Components/RecruiterForm/RecruiterForm'
 
 const App = () => {
   return (
     <div>
-        {/* <FormStepper/> */}
+        <FormStepper/>
       <RecruiterForm/>
-    
+    <CandidateRequirement/>
     </div>
   )
 }
