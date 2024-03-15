@@ -1,3 +1,13 @@
 .Interviewer__container{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
+.Interviewer__form{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+

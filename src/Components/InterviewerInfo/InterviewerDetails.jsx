@@ -7,7 +7,7 @@ const InterviewerDetails = () => {
   return (
     <>
       <div className="Interviewer__container">
-        <form>
+        <form className="Interviewer__form">
           <div style={{ margin: "15px 0" }}>
             <div style={{ fontWeight: "800", fontSize: "1.5rem" }}>
               Interviewer Details
@@ -73,8 +73,8 @@ const InterviewerDetails = () => {
                 </div>
               </div>
             </section>
-            <section>
-              <p>
+            <section className="Connect__field">
+              <p className="Connect">
                 <input type="radio" name="" id="" />
                 <div style={{ display: "flex", gap: "10px" }}>
                   <span>
@@ -92,7 +92,7 @@ const InterviewerDetails = () => {
                   candidates can connect the recruiter by calls or WhatsApp
                 </p>
               </p>
-              <p>
+              <p className="Connect">
                 <input type="radio" name="" id="" />
                 <div>
                   <IoLogoWhatsapp />
@@ -104,7 +104,7 @@ const InterviewerDetails = () => {
                   candidates can connect the recruiter by calls or WhatsApp
                 </p>
               </p>
-              <p>
+              <p className="Connect">
                 <input type="radio" name="" id="" />
                 <div>
                   <GrPersonalComputer />
