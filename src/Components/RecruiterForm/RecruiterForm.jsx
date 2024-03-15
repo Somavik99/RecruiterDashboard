@@ -12,7 +12,9 @@ const RecruiterForm = () => {
           <div style={{ fontWeight: "800", fontSize: "1.5rem" }}>
             Basic Details
           </div>
-          <span style={{ color: "crimson",fontSize:"13px" }}>*marked fields are important</span>
+          <span style={{ color: "crimson", fontSize: "13px" }}>
+            *marked fields are important
+          </span>
         </div>
 
         <div>
@@ -59,7 +61,15 @@ const RecruiterForm = () => {
                 <input type="radio" name="" id="" />
                 <div style={{ fontWeight: "800" }}>
                   Work From Office
-                  <div style={{ color: "gray" ,fontWeight: "600",fontSize:"13px"}}>Candidate have to work at office location</div>
+                  <div
+                    style={{
+                      color: "gray",
+                      fontWeight: "600",
+                      fontSize: "13px",
+                    }}
+                  >
+                    Candidate have to work at office location
+                  </div>
                 </div>
               </p>
               <p className="Location__option">
@@ -67,14 +77,31 @@ const RecruiterForm = () => {
                 <input type="radio" name="" id="" />
                 <div style={{ fontWeight: "800" }}>
                   Work From Home
-                  <div style={{ color: "gray",fontWeight: "600",fontSize:"13px" }}>Candidate have flexibility to work from home</div>
+                  <div
+                    style={{
+                      color: "gray",
+                      fontWeight: "600",
+                      fontSize: "13px",
+                    }}
+                  >
+                    Candidate have flexibility to work from home
+                  </div>
                 </div>
               </p>
               <p className="Location__option">
                 <FaTruckField />
                 <input type="radio" name="" id="" />
                 <div style={{ fontWeight: "800" }}>
-                  Field Job <div style={{ color: "gray",fontWeight: "600",fontSize:"13px" }}>Candidate have to do the field work</div>
+                  Field Job{" "}
+                  <div
+                    style={{
+                      color: "gray",
+                      fontWeight: "600",
+                      fontSize: "13px",
+                    }}
+                  >
+                    Candidate have to do the field work
+                  </div>
                 </div>
               </p>
             </div>

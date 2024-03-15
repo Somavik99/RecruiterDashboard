@@ -41,7 +41,7 @@ const CandidateRequirement = () => {
                     </p>
                     <p>
                       <input type="radio" />
-                      Other
+                      Both
                     </p>
                   </div>
                 </div>
@@ -82,7 +82,7 @@ const CandidateRequirement = () => {
               </section>
               <section className="Language__field">
                 <p style={{ fontWeight: "800" }}>
-                  Location <span style={{ color: "red" }}>*</span>
+                  Language <span style={{ color: "red" }}>*</span>
                 </p>
                 <div className="English__section">
                   <p className="English__option">
