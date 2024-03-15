@@ -1,13 +1,55 @@
-.Interviewer__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.Interviewer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Interviewer__form{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+.Interviewer__form {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 50px;
+  background: whitesmoke;
+  border-radius: 8px;
+  border: 1px solid rgba(148, 148, 148, 0.412);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 50px;
 }
 
+.Connect__field {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.Connect__field .Connect {
+  width: 150px;
+  border: 2px solid black;
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.Interviewer__buttons .Back{
+    margin:10px;
+    padding: 12px 22px;
+    font-size: 15px;
+    font-weight:700;
+    border:none;
+    background: rgb(51, 89, 214);
+    border-radius:5px;
+    color:white;
+    cursor:pointer;
+}
+
+.Interviewer__buttons .continue{
+    margin:10px;
+    padding: 12px 22px;
+    font-size: 15px;
+    font-weight:700;
+    border:none;
+    background: rgb(4,138,70);
+    border-radius:5px;
+    color:white;
+    cursor: pointer;
+}

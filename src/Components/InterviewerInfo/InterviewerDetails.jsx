@@ -118,6 +118,10 @@ const InterviewerDetails = () => {
               </p>
             </section>
           </div>
+          <div className="Interviewer__buttons">
+            <button className="Back">Back</button>
+            <button className="continue">Continue</button>
+          </div>
         </form>
       </div>
     </>

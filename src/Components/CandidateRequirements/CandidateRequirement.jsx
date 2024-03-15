@@ -153,9 +153,9 @@ const CandidateRequirement = () => {
                     border: "2px solid black",
                     resize: "none",
                     height:"90px",
-                    width:"450px",
+                    width:"550px",
                     padding:"12px",
-                    fontSize:"20px"
+                    fontSize:"18px"
                   }}
                 ></textarea>
               </section>

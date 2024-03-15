@@ -43,6 +43,7 @@
 
 .English__section {
     display: flex;
+    flex-wrap:wrap;
     gap:50px;
 }
 
@@ -51,4 +52,5 @@
     border: 2px solid black;
     padding:15px;
     border-radius:8px;
+    background: white;
 }
