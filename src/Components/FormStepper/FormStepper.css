@@ -19,7 +19,7 @@
     position:absolute;
     top: 15px;
     width:150px;
-    border: 1px solid;
+    border: 0.01rem solid green;
     /* left: 35%; */
     z-index: -1;
     transition: all 0.22s ease;
