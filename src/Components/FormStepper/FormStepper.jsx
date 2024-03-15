@@ -4,7 +4,7 @@ const FormStepper = () => {
   let Steps = [
     "Basic Details",
     "Candidate Requirements",
-    "Interviewer Info",
+    "Interviewer Details",
     "Plans",
   ];
 

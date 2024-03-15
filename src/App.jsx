@@ -2,6 +2,7 @@
 import './App.css'
 import CandidateRequirement from './Components/CandidateRequirements/CandidateRequirement'
 import FormStepper from './Components/FormStepper/FormStepper'
+import InterviewerDetails from './Components/InterviewerInfo/InterviewerDetails'
 import RecruiterForm from './Components/RecruiterForm/RecruiterForm'
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
         <FormStepper/>
       <RecruiterForm/>
     <CandidateRequirement/>
+    <InterviewerDetails/>
     </div>
   )
 }

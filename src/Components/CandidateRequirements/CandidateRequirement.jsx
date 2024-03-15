@@ -1,11 +1,11 @@
-import "./CandidateRequirement.css"
+import "./CandidateRequirement.css";
 
 const CandidateRequirement = () => {
   return (
     <>
       <div>
-        <div>
-          <form>
+        <div className="Candidate__container">
+          <form className="Candidate__form">
             <div style={{ margin: "15px 0" }}>
               <div style={{ fontWeight: "800", fontSize: "1.5rem" }}>
                 Candidate Requirements
@@ -13,7 +13,7 @@ const CandidateRequirement = () => {
             </div>
             <div>
               <section>
-                <div>
+                <div className="Candidate__input">
                   <label
                     htmlFor="MinimumEducation"
                     style={{ fontWeight: "800" }}
@@ -23,14 +23,14 @@ const CandidateRequirement = () => {
                   <input
                     type="text"
                     id="MinimumEducation"
-                    placeholder="Ex.- Web Solutions..."
+                    placeholder="Ex.- Graduate..."
                   />
                 </div>
                 <div>
                   <label htmlFor="Gender" style={{ fontWeight: "800" }}>
                     Gender <span style={{ color: "red" }}>*</span>
                   </label>
-                  <div>
+                  <div style={{ display: "flex" }}>
                     <p>
                       <input type="radio" />
                       Male
@@ -49,7 +49,7 @@ const CandidateRequirement = () => {
                   <label style={{ fontWeight: "800" }}>
                     Any specific age? <span style={{ color: "red" }}>*</span>
                   </label>
-                  <div>
+                  <div style={{ display: "flex" }}>
                     <p>
                       <input type="radio" />
                       Yes
@@ -64,7 +64,7 @@ const CandidateRequirement = () => {
                   <label htmlFor="Experience" style={{ fontWeight: "800" }}>
                     Experience <span style={{ color: "red" }}>*</span>
                   </label>
-                  <div>
+                  <div style={{ display: "flex" }}>
                     <p>
                       <input type="checkbox" />
                       Fresher
@@ -80,7 +80,7 @@ const CandidateRequirement = () => {
                   </div>
                 </div>
               </section>
-              <section className="Location__field">
+              <section className="Language__field">
                 <p style={{ fontWeight: "800" }}>
                   Location <span style={{ color: "red" }}>*</span>
                 </p>
@@ -133,7 +133,7 @@ const CandidateRequirement = () => {
                   </p>
                 </div>
               </section>
-              <section>
+              <section style={{ display: "flex", flexDirection: "column" }}>
                 <label style={{ fontWeight: "800" }}>
                   Skill Preference <span style={{ color: "red" }}>*</span>
                 </label>
@@ -143,12 +143,26 @@ const CandidateRequirement = () => {
                 <p style={{ fontWeight: "800" }}>
                   Job Description <span style={{ color: "red" }}>*</span>
                 </p>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea
+                  name=""
+                  id=""
+                  cols="50"
+                  rows="10"
+                  style={{
+                    borderRadius: "8px",
+                    border: "2px solid black",
+                    resize: "none",
+                    height:"90px",
+                    width:"450px",
+                    padding:"12px",
+                    fontSize:"20px"
+                  }}
+                ></textarea>
               </section>
             </div>
-            <div>
-              <button>Back</button>
-              <button>Continue</button>
+            <div className="Buttons">
+              <button className="Back">Back</button>
+              <button className="continue">Continue</button>
             </div>
           </form>
         </div>
