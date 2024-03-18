@@ -16,8 +16,12 @@ const FormStepper = ({ FormConfig = [] }) => {
         {FormConfig?.map((step, index) => {
           return (
             <div key={step.name}>
-              <div className="Steps">
-                <div className="SingleStep"> {index + 1}</div>
+              <div
+                className={`SingleStep ${
+                  CurrentStep > index + 1 || IsComplete ? "Complete" : ""
+                } ${CurrentStep === index + 1 ? "active" : ""}`}
+              >
+                <div className="StepNumber">{index + 1}</div>
                 <span
                   style={{ fontSize: "13px", fontWeight: "700", width: "50px" }}
                 >
