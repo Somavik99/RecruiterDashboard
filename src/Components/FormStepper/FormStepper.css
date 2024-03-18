@@ -5,7 +5,7 @@
 }
 
 .StepNumber {
-  background: rgba(33, 32, 32, 0.506);
+  background: rgb(156, 156, 156);
   width: 20px;
   height: 20px;
   padding: 5px;
@@ -28,14 +28,21 @@
   color: white;
 }
 
-.Stepper__line {
+.Step__line {
   position: absolute;
   top: 25%;
-  width: 100%;
-  height: 5px;
-  border: 0.01rem solid rgb(14, 175, 14);
+  /* width: 100%; */
+  height: 1px;
+  /* border: 1px solid rgb(0, 0, 0); */
   transition: all 0.22s ease;
   background: black;
+  z-index: -1;
+}
+
+.progress__bar{
+  height: 100%;
+  background:rgb(60, 255, 60);
+  transition: 0.2s ease;
 }
 
 .Stepper {
