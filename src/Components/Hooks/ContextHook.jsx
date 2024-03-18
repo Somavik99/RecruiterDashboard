@@ -1,5 +1,10 @@
 import { createContext } from "vm";
 
+const StepperContext = createContext();
 
-const ContextProvider = createContext()
+const ContextStepProvider = ({ children }) => {
 
+
+  
+  return <StepperContext.provider>{children}</StepperContext.provider>;
+};
