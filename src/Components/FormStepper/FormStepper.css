@@ -39,9 +39,9 @@
   z-index: -1;
 }
 
-.progress__bar{
+.progress__bar {
   height: 100%;
-  background:rgb(60, 255, 60);
+  background: rgb(60, 255, 60);
   transition: 0.2s ease;
 }
 
@@ -52,4 +52,12 @@
   justify-content: center;
   /* flex-direction: column; */
   gap: 80px;
+}
+
+.Button {
+  position: relative;
+  bottom: 80px;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
 }

@@ -26,16 +26,23 @@ const FormStepper = ({ FormConfig = [] }) => {
     });
   };
 
+  const HandleBackComponent = () => {
+    setCurrentStep((prevStep) => {
+      setIsComplete(false)
+      return prevStep - 1;
+    });
+  };
+
   const ProgressBarWidth = () => {
     return ((CurrentStep - 1) / (FormConfig.length - 1)) * 100;
   };
 
   useEffect(() => {
     setStepperMargin({
-      marginLeft: StepperRef.current[0].offsetWidth / 2,
-      marginRight: StepperRef.current[FormConfig.length - 1].offsetWidth / 2,
+      marginLeft: StepperRef.current[0].offsetWidth / 5,
+      marginRight: StepperRef.current[FormConfig.length - 1].offsetWidth / 5,
     });
-  }, [StepperRef]);
+  }, [StepperRef, FormConfig]);
 
   if (!FormConfig.length) {
     return <></>;
@@ -85,11 +92,14 @@ const FormStepper = ({ FormConfig = [] }) => {
       </div>
 
       <ComponentIsActive />
-      {!IsComplete && (
-        <button onClick={HandleNextComponent}>
-          {CurrentStep === FormConfig.length ? "Submit" : "Continue"}
-        </button>
-      )}
+      <div className="Button">
+        {CurrentStep > 1 ? <button onClick={HandleBackComponent} className="Back">Back</button> : null}
+        {!IsComplete && (
+          <button onClick={HandleNextComponent} className="Continue">
+            {CurrentStep === FormConfig.length ? "Submit" : "Continue"}
+          </button>
+        )}
+      </div>
     </div>
   );
 };
